@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -93,9 +92,10 @@ public class LoginActivity extends AppCompatActivity {
         editor.putBoolean(Constants.REMEMBER, cbRemember.isChecked()); //put"tipoDeDados", Parametros: Key, valor
 
         editor.apply(); //aplica todas as aplicações
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class); //serve para chamar qualquer activity ou app... passamos this e o objeto a passar.
+        startActivity(intent);
     }
-
-
 
     public void onForgotClick(View view) {
 
@@ -110,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onCreatUserClick(View view) {
-        Intent intent = new Intent(getApplicationContext(), CreateUser.class); //serve para chamar qualquer activity ou app... passamos this e o objeto a passar.
+        Intent intent = new Intent(getApplicationContext(), CreateProduct.class); //serve para chamar qualquer activity ou app... passamos this e o objeto a passar.
         startActivity(intent);
     }
 }
