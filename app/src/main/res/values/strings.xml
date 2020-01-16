@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Book Manager</string>
+    <string name="app_name">Shopping List</string>
 
     <!-- Login -->
     <string name="prompt_email">Email</string>
@@ -17,7 +17,10 @@
     <string name="forgot_password_message">Please contact an administrator to reset password</string>
     <string name="ok">ok</string>
     <string name="title_activity_add_book">AddBookActivity</string>
-
+    <string-array name="unidade_array">
+        <item>un</item>
+        <item>kg</item>
+    </string-array>
 
     <!-- Create a new user -->
     <string name="create_user">Create user</string>
@@ -27,6 +30,7 @@
     <string name="password_do_not_match">Password do not match</string>
     <string name="user_created_with_success">User created with success</string>
     <string name="user_created_without_success">Impossible to create this user, please try again</string>
+    <string name="title_activity_main">MainActivity</string>
 
 
 </resources>
